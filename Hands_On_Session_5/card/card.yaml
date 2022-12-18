@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: card
+  name: card
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: card
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: card
+    spec:
+      containers:
+      - image: card:latest
+        name: card
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8081
+        resources: {}
+status: {}
