@@ -62,6 +62,27 @@ MICROSERVICE 4: - Create a loan microservice with features to save the loan deta
 NOTE: - For code snippet and other details please refer to folder: - “Hands_On_Session_4”
 
 
+                                               HANDS ON-ASSIGNMENT 5
+                                               
+                                               BANKING APPLICATION
+MICROSERVICE 1: - Create an account microservice with features to save the account and fetch account details for the customer. Create a docker file which will help in                   creating a image that will be deployed in kubernetes cluster.
+
+MICORSERVICE 2: - Create a card microservice with features to save the customer card details and fetch card details for the customer. Create a docker file which will                     help in creating a image that will be deployed in kubernetes cluster.
+
+MICROSERVICE 3: - Create a loan microservice with features to save the loan details and fetch loan details for the customer. Create a docker file which will help in                     creating a image that will be deployed in kubernetes cluster.
+
+NOTE: - For code snippet and other details please refer to folder: - “Hands_On_Session_5” in below git repository location:
+
+
+
+
+
+
+
+
+
+
+
 
 
 
