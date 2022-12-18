@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: loan
+  name: loan
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: loan
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: loan
+    spec:
+      containers:
+      - image: loan:latest
+        name: loan
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8082
+        resources: {}
+status: {}
