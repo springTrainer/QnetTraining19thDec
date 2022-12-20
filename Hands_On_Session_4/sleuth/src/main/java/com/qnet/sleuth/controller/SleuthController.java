@@ -16,4 +16,11 @@ public class SleuthController {
         logger.info("Hello Sleuth");
         return "success";
     }
+    
+    @GetMapping("/sleuthServiceCall")
+    public String sleuthServiceCall(){
+        logger.info("Inside the method sleuthServiceCall of service 1");
+        template.getForEntity("http://localhost:9093/sleuthService",String.class);
+        return "success";
+    }
 }
